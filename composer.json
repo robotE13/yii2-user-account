@@ -42,7 +42,7 @@
             "type": "package",
             "package": {
                 "name": "robote13/user-account",
-                "version": "0.2.0-alpha",
+                "version": "0.2.1-alpha",
                 "dist": {
                     "url": "/packages/user-account",
                     "type": "path"

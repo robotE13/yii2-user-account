@@ -8,6 +8,8 @@
 
 namespace RobotE13\Yii2UserAccount;
 
+use yii\helpers\ArrayHelper;
+
 /**
  * Description of Bootstrap
  *
@@ -15,12 +17,31 @@ namespace RobotE13\Yii2UserAccount;
  */
 class Bootstrap implements \yii\base\BootstrapInterface
 {
+
     /**
      *
      * @param \yii\base\Application $app
      */
     public function bootstrap($app)
     {
+        if($app instanceof \yii\console\Application)
+        {
+            // добавление пути к миграциям модуля в Yii контроллер миграций
+            $app->controllerMap = ArrayHelper::merge($app->controllerMap, ['migrate' => [
+                            'class' => \yii\console\controllers\MigrateController::class,
+                            'migrationNamespaces' => ['RobotE13\Yii2UserAccount\Migrations']]
+            ]);
+        }
+
+        if($app instanceof \yii\web\Application)
+        {
+            \Yii::warning($app->hasModule('accounts'));
+            $app->setModule('accounts', [
+                'class' => Module::class
+            ]);
+            \Yii::warning($app->modules);
+            \Yii::warning($app->hasModule('accounts'));
+        }
     }
 
 }
