@@ -14,7 +14,7 @@ namespace RobotE13\Yii2UserAccount\Adapters;
 
 use Yii;
 use RobotE13\UserAccount\Entities\User;
-use RobotR13\UserAccount\Repositories\{
+use RobotE13\UserAccount\Repositories\{
     UserRepository,
     NotFoundException
 };

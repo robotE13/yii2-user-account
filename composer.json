@@ -14,7 +14,7 @@
     "require": {
         "php": "^7.4 | ^8",
         "yiisoft/yii2": "~2.0.14",
-        "robote13/user-account": "^0.1.0 | ~0.2.0-alpha"
+        "robote13/user-account": "^0.1.1 || ^0.2.0"
     },
     "require-dev": {
         "codeception/codeception": "^4.1",
@@ -35,14 +35,10 @@
             "url": "https://asset-packagist.org"
         },
         {
-            "type": "vcs",
-            "url": "git@github.com:robotE13/user-account.git"
-        },
-        {
             "type": "package",
             "package": {
                 "name": "robote13/user-account",
-                "version": "0.2.1-alpha",
+                "version": "0.2.0",
                 "dist": {
                     "url": "/packages/user-account",
                     "type": "path"
