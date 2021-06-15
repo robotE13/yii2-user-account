@@ -14,7 +14,7 @@
     "require": {
         "php": "^7.4 | ^8",
         "yiisoft/yii2": "~2.0.14",
-        "robote13/user-account": "^0.1.1 || ^0.2.0"
+        "robote13/user-account": "^0.2.0 || ^0.3.0"
     },
     "require-dev": {
         "codeception/codeception": "^4.1",
@@ -38,7 +38,7 @@
             "type": "package",
             "package": {
                 "name": "robote13/user-account",
-                "version": "0.2.0",
+                "version": "0.3.0",
                 "dist": {
                     "url": "/packages/user-account",
                     "type": "path"
