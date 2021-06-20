@@ -5,6 +5,8 @@
 /.gitignore         export-ignore
 /bin                export-ignore
 /tests              export-ignore
+/config             export-ignore
+/yii                export-ignore
 
 # Shell script files will be always have LF line endings on checkout.
 /bin/* text eol=lf

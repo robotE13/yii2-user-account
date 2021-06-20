@@ -37,7 +37,7 @@ class Yii2DaoUserRepository implements UserRepository
         $this->dbConnection = Yii::$app->get($dbConnection);
     }
 
-    public function add(User $user)
+    public function add(User $user): void
     {
         $this->dbConnection->createCommand()
                 ->insert('{{%user}}', $this->extract($user))
@@ -51,15 +51,14 @@ class Yii2DaoUserRepository implements UserRepository
 
     public function findById($id): User
     {
-
     }
 
-    public function remove($id)
+    public function remove($id): void
     {
 
     }
 
-    public function update(User $user)
+    public function update(User $user): void
     {
 
     }
