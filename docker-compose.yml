@@ -1,0 +1,26 @@
+version: '3.5'
+services:
+    php:
+        image: robote13/yii2-module-dev:php7.4
+        depends_on:
+          - db
+        volumes:
+          - ./:/usr/src/project 
+          - ./../:/packages
+    db:
+        image: mariadb:latest
+        volumes:
+          - db_data:/var/lib/mysql
+        environment:
+            MYSQL_DATABASE: test_module
+            MYSQL_ROOT_PASSWORD: rootpassword
+#    phpmyadmin:
+#        image: phpmyadmin/phpmyadmin:latest
+#        ports:
+#          - "5001:80"
+#        depends_on:
+#          - db
+#        volumes:
+#          - db_data:/var/lib/mysql
+volumes:
+    db_data:

@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker run -it --rm -v ${PWD}/:/usr/src/project -v ${PWD}/../:/packages robote13/yii2-module-dev composer $@
+docker-compose run --rm -e COMPOSE_PROJECT_NAME=yii2-user-account-dev php composer $@

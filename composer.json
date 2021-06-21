@@ -50,7 +50,11 @@
             "codecept"
         ],
         "test": [
+            "@yii migrate --interactive=0",
             "codecept -v run"
+        ],
+        "yii":[
+            "@php yii"
         ]
     },
     "autoload": {
