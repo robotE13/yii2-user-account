@@ -10,7 +10,7 @@
  * @package yii2-user-account
  */
 
-namespace RobotE13\Yii2UserAccount\Migrations;
+namespace RobotE13\Yii2UserAccount\Repositories\Migrations;
 
 /**
  * Description of Migration

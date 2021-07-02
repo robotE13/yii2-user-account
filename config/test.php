@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'id' => 'tests',
-    'basePath' => dirname(__DIR__),
+    'id' => 'user-account-tests',
+    'basePath' => Yii::getAlias('@RobotE13/Yii2UserAccount'),
     'bootstrap' => [\RobotE13\Yii2UserAccount\Bootstrap::class],
     'vendorPath' => dirname(__DIR__) . '/vendor',
     'components' => [
@@ -18,6 +18,6 @@ return [
         ],
     ],
     'modules' => [
-        'user-account' => \RobotE13\Yii2UserAccount\Module::class
+        'accounts' => \RobotE13\Yii2UserAccount\Module::class
     ]
 ];

@@ -6,8 +6,8 @@
 require_once __DIR__ . '/tests/_bootstrap.php';
 
 $config = yii\helpers\ArrayHelper::merge(
-                [],
-                require __DIR__ . '/config/test.php'
+                require __DIR__ . '/config/test.php',
+                require __DIR__ . '/config/console.php'
 );
 
 $application = new yii\console\Application($config);

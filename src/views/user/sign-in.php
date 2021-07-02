@@ -12,3 +12,7 @@
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */
+
+?>
+
+<h1>Login Form</h1>

@@ -29,18 +29,15 @@ class Bootstrap implements \yii\base\BootstrapInterface
             // добавление пути к миграциям модуля в Yii контроллер миграций
             $app->controllerMap = ArrayHelper::merge($app->controllerMap, ['migrate' => [
                             'class' => \yii\console\controllers\MigrateController::class,
-                            'migrationNamespaces' => ['RobotE13\Yii2UserAccount\Migrations']]
+                            'migrationNamespaces' => ['RobotE13\Yii2UserAccount\Repositories\Migrations']]
             ]);
         }
 
         if($app instanceof \yii\web\Application)
         {
-            \Yii::warning($app->hasModule('accounts'));
             $app->setModule('accounts', [
                 'class' => Module::class
             ]);
-            \Yii::warning($app->modules);
-            \Yii::warning($app->hasModule('accounts'));
         }
     }
 

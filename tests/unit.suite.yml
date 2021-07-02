@@ -9,6 +9,5 @@ modules:
         - RobotE13\UserAccount\Tests\Module\Builder
         - \Helper\Unit
         - Yii2:
-            configFile: 'config/test.php'
             part: init
     step_decorators: ~        

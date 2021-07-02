@@ -12,7 +12,6 @@
 
 namespace RobotE13\Yii2UserAccount\Controllers;
 
-use RobotE13\UserAccount\Services\UserService;
 use RobotE13\Yii2UserAccount\Forms\LoginForm;
 
 /**
@@ -23,18 +22,10 @@ use RobotE13\Yii2UserAccount\Forms\LoginForm;
 class UserController extends \yii\web\Controller
 {
 
-    private $userService;
-
-    public function __construct($id, $module, UserService $userService,$config = array())
-    {
-        $this->userService = $userService;
-        parent::__construct($id, $module, $config);
-    }
-
     public function actionSignIn()
     {
         $form = new LoginForm();
-        $this->render('sign-in', compact('form'));
+        return $this->render('sign-in', compact('form'));
     }
 
     public function actionSignUp()

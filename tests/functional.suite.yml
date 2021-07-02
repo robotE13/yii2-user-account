@@ -9,7 +9,5 @@ actor: FunctionalTester
 modules:
     enabled:
         - \Helper\Functional
-        - Yii2:
-            configFile: 'config/test.php'
-            part: orm
+        - Yii2
     step_decorators: ~        

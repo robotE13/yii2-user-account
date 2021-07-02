@@ -1,6 +1,6 @@
 <?php
 
-namespace RobotE13\Yii2UserAccount\Migrations;
+namespace RobotE13\Yii2UserAccount\Repositories\Migrations;
 
 /**
  * Handles the creation of table `{{%user}}`.
